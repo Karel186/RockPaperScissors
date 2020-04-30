@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Rock Paper Scissors Game</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header class="center">
+            <h1>Welcome to the <i>Rock Paper Scissors Game </i> 😁</h1>
+        </header>
+
+        <div class="center column_container">
+            <h3>Choose one from the following to start and play with Julianna</h3>
+            <h3><i>The first one who reaches a score of 5, WINS!</i></h3>
+        </div>
+
+        <!-- Images for user to select from-->
+        <div id="container_images" class="center">
+            <span id="rock_img">
+                <img id = 'rock' src='images/rock.png' alt="rock">
+            </span>
+            <span id="scissors_img">
+                <img id="scissors" src='images/scissors.png' alt="scissors">
+            </span>
+            <span id="paper_img">
+                <img id = 'paper' src='images/paper.png' alt="rock">
+            </span>
+        </div>
+
+        <!-- Separator-->
+        <hr id="horizontal_separator">
+
+        <!-- Computer Choice-->
+        <div id="computer_choice">
+            <h4 class="center">Julianna chose: </h4>
+            <div id="computer_image" class="center">
+                <img  src='images/scissors.png' alt="computer image">
+            </div>
+        </div>
+
+        <!-- Displaying Results-->
+        <div class='scoreboard'>
+            <h2 class='center'>SCOREBOARD</h2>
+
+            <div id = 'score_result'>
+                <div id ='user' class='column_container'>
+                    <h3>You</h3>
+                    <p id='user_score'>0</p>
+                </div>
+                <div id = 'computer' class='column_container'>
+                    <h3>Julianna</h3>
+                    <p id='computer_score'>0</p>
+                </div>
+            </div>
+            <div id='message' class='center'>Your move!</div>
+            <button id='resetbtn'>New Game</button>
+        </div>
+
+        <!--Footer-->
+        <footer class='full_width'>
+            <p>Designed by Karel V.</p>
+        </footer>
+        <script src ='script.js'></script>
+    </body>
+</html>
